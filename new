@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # prompt user for new name
-echo -n "what is the name of your new auto script? "
-read NAME
+NAME=$1
 
 mkdir tmp
 cd tmp/
