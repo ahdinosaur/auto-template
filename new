@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# prompt user for new name
+echo "what is the name of your new auto script? "
+read NAME
+
+mkdir tmp
+cd tmp/
+wget https://github.com/ahdinosaur/auto-template/tarball/master
+tar xzf master
+AUTO=$(ls | egrep "ahdinosaur-auto-template-[a-zA-Z0-9]+")
+mv $AUTO/template ../$NAME
+cd ..
+rm -rf tmp

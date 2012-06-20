@@ -1,0 +1,7 @@
+# auto-template
+
+template for auto-* scripts
+
+## how to make new ship
+
+curl https://raw.github.com/ahdinosaur/auto-template/master/new | bash
